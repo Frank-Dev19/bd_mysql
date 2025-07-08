@@ -1,0 +1,10 @@
+version: '3.1'
+services:
+  mysql:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_DATABASE: auth_db
+      MYSQL_ROOT_PASSWORD: programador16
+    ports:
+      - 3306:3306
